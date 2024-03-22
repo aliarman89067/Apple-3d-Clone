@@ -10,14 +10,6 @@ import { models, sizes } from "../constant";
 import { animateWithGsapTimeline } from "../utils/animations";
 
 export default function Model() {
-  // Object Entries Practice
-  const testingObject = {
-    1: "Ali Arman",
-    2: "Zaino Ali",
-  };
-  Object.entries(testingObject).map((item) => {
-    console.log(item);
-  });
   const [size, setSize] = useState("small");
   const [model, setModel] = useState({
     title: "iPhone 15 Pro in Natural Titanium",
@@ -27,7 +19,6 @@ export default function Model() {
   // Camre Control
   const cameraControlSmall = useRef();
   const cameraControlLarge = useRef();
-  console.log(cameraControlSmall);
   //   Models
   const small = useRef(new THREE.Group());
   const large = useRef(new THREE.Group());
